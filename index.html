@@ -8,11 +8,25 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div>
-        <h1>My Project</h1>
-    </div>
-    <div id="container">
-        <button id="click-me">Click me!</button>
+    <div class="grid-container">
+        <div class="grid-item grid-head">
+            <span><h1 id="banner-title">My Project</h1></span>
+        </div>
+    
+        <div class="grid-item grid-content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod harum ab veritatis quibusdam magnam ut exercitationem nesciunt, hic molestias obcaecati. Quia minima, dolorum accusantium ducimus sapiente id vel pariatur provident.</p>
+            <input placeholder="Add a task...">
+            <button id="click-me">Add to list</button>
+        </div>
+
+        <div class="grid-item checklist-header">
+            <h2>To-Do List</h2>
+        </div>
+        <div class="grid-item checklist">
+            <ul id="checklist">
+
+            </ul>
+        </div>
     </div>
 
     <script src="./index.js"></script>
