@@ -10,16 +10,14 @@
 <body>
     <div class="grid-container">
         <div class="grid-item grid-head">
-            <img src="./resources/img/brianlogo.gif"  height="80px" />
-            <span>
-                <h1 id="banner-title">Workshop 2: To-Do List</h1>
-            </span>
+            <img id="banner-logo" src="./resources/img/brianlogo.gif"  height="80px" />
+            <h1 id="banner-title">SDI #20 Workshop 2: To-Do List</h1>
         </div>
     
         <div class="grid-item grid-content">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod harum ab veritatis quibusdam magnam ut exercitationem nesciunt, hic molestias obcaecati. Quia minima, dolorum accusantium ducimus sapiente id vel pariatur provident.</p>
-            <input placeholder="Add a task...">
-            <button id="click-me">Add to list</button>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum provident error hic aspernatur accusamus incidunt, reprehenderit impedit eligendi alias veritatis possimus, pariatur inventore laboriosam architecto natus perferendis. Rerum dicta voluptatem quibusdam sed esse eligendi tempora voluptatum quam aspernatur culpa hic, molestiae labore in illo quod qui magnam obcaecati? Repellendus ab provident maxime vitae error asperiores et quos, corporis mollitia facere quibusdam. Numquam adipisci, sed, incidunt amet sapiente distinctio eos voluptates fugit consectetur impedit doloremque perspiciatis a harum enim hic explicabo id dicta nostrum quas unde reiciendis consequuntur! Eum quidem quam mollitia dicta ut molestias itaque, ullam dignissimos quasi minima ad.</p>
+            <input type="text" id="task-input" placeholder="Add a task...">
+            <button id="task-submit">Add to list</button>
         </div>
 
         <div class="grit item checklist-head-left"></div>
@@ -28,8 +26,12 @@
         </div>
         <div class="grid-item checklist-list">
             <ul id="checklist">
-                <li>foo</li>
-                <li>bar</li>
+                <div id="task-item">
+                    <li><input id="task-checkbox" type="checkbox">Foo<button id="task-done">Done</button></li>
+                </div>
+                <div id="task-item">
+                    <li id="task-item"><input id="task-checkbox" type="checkbox">Bar<button id="task-done">Done</button></li>
+                </div>
             </ul>
         </div>
     </div>
